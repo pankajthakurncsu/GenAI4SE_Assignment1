@@ -13,9 +13,11 @@ AN ipynb file is attached in the zip file that can be run directly by importing 
 The following task was experimented with two CodeBert models - CodeBert-base and CodeBERTa-small-v1 with perplexity values of 5 and 7 for each. The observations for each case have been noted in the next section.
 
 **Observations and Visualizations**
+From the experimentation it was observed the perplexity value of 5 is best suited for visualizing the functions. Each snipped from CC Detection had two functions and it was aimed to find out it the functions are semantically equivalent in the vector space when broken down into their respective embeddings. In the plots, function pairs are plotted in the same color to observe the semantic equivalence or non-equivalence. There are 10 function pairs, hence the 20 for each plots. 
 
-![codebert_p5](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/2ee47b27-5c24-4edd-9354-7240358aa725)
+Observations for CodeBERTa-small-v1
+With Codeberta-small there was better seperation observed between the data points, which represent the embeddings of each function. With perplexity = 5 the semantic equivalence or non-equivalence could be more clearly observed in the vector space. The points close to each other are semantically equivalent as compared to the points away from each other. In most cases the function pairs that are supposed to be equivalent as per the cc detection task value, they are not shown to be equivalent in the vector representation of their points in the plot. For example func 3 and 4 are supposed to be semantically equivalent as per the label in the task, but their vector points are far apart from each other, same is the case with points func11 and func12. However there are some points whose equivalence in the plot matched with the assigned label in the cc detection task, like points func5, func6 and func 17 and func 18. On the same vein points func 7, func 8 are non-equivalent in as per their labels and the same thing can be observed in the plot.
+![codebert_small_p5](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/158df04a-d678-4f44-89d2-4113d9fed0ac)
 
-![codebert_smal![codebertsmall_p7](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/04690eb9-3226-4b2e-b2ef-69064a5ab17e)
-l_p![codebert_p7](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/61f1c58e-ddc6-4da6-b89d-418d3d8e9a5e)
-5](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/ed819f89-67eb-4024-84d5-746789f23b58)
+
+![codebertsmall_p7](https://github.com/pankajthakurncsu/GenAI4SE_Assignment1/assets/142834390/277222d3-8f19-4e14-88b1-8c984954b379)

@@ -3,16 +3,16 @@
 **Objective** <br>
 To observe visualization of the embeddings of 10 code snippets sampled from the task Code Clone Detection benchmark from CodeXGlue using CodeBert model and TSNE technique. 
 
-**Requirements**
+**Requirements** <br>
 The dependencies are listed out in the requirements.txt attached in the zip file
 
-**Code**
+**Code** <br>
 An ipynb file is attached in the zip file that can be run directly by importing into Google Colab. The code implementation was done on Google Colab.
 
-**Experimentation**
+**Experimentation** <br>
 The following task was experimented with two CodeBert models - CodeBert-base and CodeBERTa-small-v1 with perplexity values of 5 and 7 for each. The observations for each case have been noted in the next section.
 
-**Observations and Visualizations**
+**Observations and Visualizations** <br>
 From the experimentation it was observed the perplexity value of 5 is best suited for visualizing the functions. Each snipped from CC Detection had two functions and it was aimed to find out it the functions are semantically equivalent in the vector space when broken down into their respective embeddings. In the plots, function pairs are plotted in the same color to observe the semantic equivalence or non-equivalence. There are 10 function pairs, hence the 20 for each plots. 
 
 Observations for CodeBERTa-small-v1:

@@ -1,13 +1,13 @@
 # GenAI4SE Assignment: Code Embedding and Visualization
 
-**Objective**
+**Objective** <br>
 To observe visualization of the embeddings of 10 code snippets sampled from the task Code Clone Detection benchmark from CodeXGlue using CodeBert model and TSNE technique. 
 
 **Requirements**
 The dependencies are listed out in the requirements.txt attached in the zip file
 
 **Code**
-AN ipynb file is attached in the zip file that can be run directly by importing into Google Colab. The code implementation was done on Google Colab.
+An ipynb file is attached in the zip file that can be run directly by importing into Google Colab. The code implementation was done on Google Colab.
 
 **Experimentation**
 The following task was experimented with two CodeBert models - CodeBert-base and CodeBERTa-small-v1 with perplexity values of 5 and 7 for each. The observations for each case have been noted in the next section.
